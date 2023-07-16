@@ -41,8 +41,39 @@ body {
 .hero a {
   color: var(--pink);
   background-color: white;
+  box-shadow: var(--shadow);
 }
 .hero a:hover {
   background-color: var(--pink);
   color: white;
+}
+/* Media Query */
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+}
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+}
+/* Mobile Phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 45px;
+    margin: 3px;
+  }
 }
