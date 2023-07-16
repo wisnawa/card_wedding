@@ -17,10 +17,7 @@
       rel="stylesheet"
     />
     <!-- simplyCountdown https://vincentloy.github.io/simplyCountdown.js/ -->
-    <link
-      rel="stylesheet"
-      href="/countdown/simplyCountdown.theme.default.css"
-    />
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
     <script src="countdown/simplyCountdown.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -33,7 +30,7 @@
         <h4>Kepada Bapak/Ibu/Saudara/i</h4>
         <h1>Rama & Shinta</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
-        <div class="countdown"></div>
+        <div class="simply-countdown"></div>
         <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
       </main>
     </section>
@@ -43,7 +40,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      simplyCountdown(".countdown", {
+      simplyCountdown(".simply-countdown", {
         year: 2023, // required
         month: 7, // required
         day: 18, // required
@@ -52,7 +49,7 @@
           //words displayed into the countdown
           days: { singular: "hari", plural: "hari" },
           hours: { singular: "jam", plural: "jam" },
-          minutes: { singular: "minute", plural: "menit" },
+          minutes: { singular: "menit", plural: "menit" },
           seconds: { singular: "detik", plural: "detik" },
         },
       });
